@@ -1,53 +1,135 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="de">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Connect with us</title>
-	<style type="text/css">
-		p{
-			background-color: seagreen;
-			text-align: center;
-		}
-
-		img{
-			width: 100%;
-		}
-		h1{
-			background-color: silver;
-			text-align: center;
-		}
-
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt - FOOD, LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>
-		It's allways good to hear from you 
-	</h1>
-	<div class="div"><p>
-	<br>FOOD, LLC:</br>
-	Call us on:
-	0007487487
-	or send us an E-Mail:
-	foodllc@hotmail.net
-
-</p>
-</div>
-
-	<img src="https://thumbs.dreamstime.com/b/beautiful-wooden-background-napkin-knife-fork-fine-background-menu-restaurants-cafes-63054686.jpg">
-	<div> <a href="file:///C:/Users/Saleh/coursera-test/Module3_Solution/mod3_index.html?#sushi"><p>
-		Back to Menu
-	</a></p></div>
-	
-<div class="div"><p>
-	FOOD, LLC:
-	Call us on:
-	0007487487
-	or send us an E-Mail:
-	foodllc@hotmail.net
-
-</p>
-</div>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="mod3_index.html">
+                  <i class="fas fa-utensils me-2"></i>FOOD, LLC
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavContact">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavContact">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="mod3_index.html#chicken">
+                            <i class="fas fa-drumstick-bite me-1"></i>Chicken
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="mod3_index.html#beef">
+                            <i class="fas fa-hamburger me-1"></i>Beef
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="mod3_index.html#sushi">
+                            <i class="fas fa-fish me-1"></i>Sushi
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="link.html">
+                            <i class="fas fa-envelope me-1"></i>Kontakt
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1 class="display-4">
+              <i class="fas fa-comments me-3"></i>Wir freuen uns, von Ihnen zu hören!
+            </h1>
+            <p class="lead">Kontaktieren Sie uns für Reservierungen, Fragen oder Feedback</p>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-card text-center">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>Rufen Sie uns an:</p>
+                    <h4>000 748 7487</h4>
+                    <p class="mt-3">
+                      <i class="fas fa-clock me-1"></i>Täglich von 10:00 - 22:00 Uhr
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="contact-card text-center">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-Mail</h3>
+                    <p>Schreiben Sie uns:</p>
+                    <h4>foodllc@hotmail.net</h4>
+                    <p class="mt-3">
+                      <i class="fas fa-reply me-1"></i>Wir antworten innerhalb von 24 Stunden
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Info -->
+        <div class="contact-card mt-4">
+            <h2 class="text-center mb-4">
+              <i class="fas fa-store me-3"></i>Besuchen Sie uns
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>
+                      <i class="fas fa-clock me-2"></i>Öffnungszeiten
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Montag - Freitag: 11:00 - 22:00</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Samstag: 10:00 - 23:00</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Sonntag: 10:00 - 21:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>
+                      <i class="fas fa-map-marker-alt me-2"></i>Adresse
+                    </h4>
+                    <p>
+                      <i class="fas fa-location-dot me-2 text-danger"></i>Hauptstraße 123<br>
+                      <i class="fas fa-city me-2 text-info"></i>8000 Zürich<br>
+                      <i class="fas fa-flag me-2 text-warning"></i>Schweiz
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Menu -->
+        <div class="text-center mt-5">
+            <a href="mod3_index.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-arrow-left me-2"></i>Zurück zum Menü
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>
+              <i class="fas fa-copyright me-1"></i>2025 FOOD, LLC – Alle Rechte vorbehalten
+            </p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
