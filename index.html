@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio von Saleh</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saleh | Portfolio</title>
+  
   <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-
-  <!-- Eigene Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Eigenes CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-warning" href="#">Saleh</a>
+      <a class="navbar-brand" href="#start">Saleh</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#ueber-mich">Über mich</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fertigkeiten">Fertigkeiten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projekte">Java Projekte</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faehigkeiten">Fähigkeiten</a></li>
           <li class="nav-item"><a class="nav-link" href="#hobbys">Hobbys</a></li>
           <li class="nav-item"><a class="nav-link" href="#zukunft">Zukunft</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
@@ -34,81 +37,202 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero text-center text-light d-flex align-items-center justify-content-center">
-    <div>
-      <img src="pictures/me.png" alt="Saleh" class="rounded-circle mb-3 profilbild" />
-      <h1 class="fw-bold">Hallo, ich bin Saleh 👋</h1>
-      <p class="lead">Ich bin ein angehender Softwareentwickler aus Zürich, motiviert Neues zu lernen und zu erschaffen.</p>
-      <a href="#ueber-mich" class="btn btn-outline-light mt-3">Mehr über mich</a>
+  <!-- Hero -->
+  <header id="start" class="hero">
+    <div class="container header-content">
+      <img src="pictures/me.png" alt="Saleh" class="profilbild">
+      <h1>Hallo, ich bin Saleh</h1>
+      <p class="subtitle">25 Jahre alt, aus Zürich | Aspiring Software Developer</p>
+      <a href="#projekte" class="cta-button">Meine Projekte sehen</a>
     </div>
-  </section>
+  </header>
 
-  <!-- Über mich -->
-  <section id="ueber-mich" class="py-5 text-center bg-light text-dark">
-    <div class="container">
-      <h2 class="fw-bold mb-4 text-uppercase">Über mich</h2>
-      <p class="lead mb-4">
-        Ich bin 25 Jahre alt, lebe mit meiner Familie in Zürich und habe bereits in verschiedenen Ländern gearbeitet –
-        im Bauwesen, in der Buchhaltung, Elektrotechnik und im Handel. Diese Erfahrungen haben mich diszipliniert und lernfreudig gemacht.
-      </p>
-      <p class="lead">
-        Meine Leidenschaft gilt der IT. Ich möchte Softwareentwickler werden und innovative Lösungen erschaffen, die Menschen helfen.
-      </p>
-    </div>
-  </section>
-
-  <!-- Fertigkeiten -->
-  <section id="fertigkeiten" class="py-5 text-center bg-dark text-light">
-    <div class="container">
-      <h2 class="fw-bold mb-4 text-uppercase text-warning">Fertigkeiten</h2>
-      <p class="lead">
-        Ich bilde mich kontinuierlich weiter – in Deutsch, Englisch, 10-Finger-Schreiben und Webentwicklung.
-        Zurzeit absolviere ich Online-Kurse auf Coursera im Bereich Frontend-Entwicklung.
-      </p>
-      <a href="weiteres_Projekt/mod3_index.html" class="btn btn-warning mt-3">Mein Projekt ansehen</a>
-
-      <div class="d-flex justify-content-center mt-4 flex-wrap">
-        <img src="pictures/learn.png" alt="Lernen" class="icon" />
-        <img src="pictures/it-learn.png" alt="IT Lernen" class="icon" />
+  <main class="container">
+    <!-- Über mich -->
+    <section id="ueber-mich" class="section">
+      <h2 class="section-title">Über mich</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Ich habe in verschiedenen Branchen gearbeitet – im Bau, in der Buchhaltung, Elektrik und im Handel. Diese vielfältigen Erfahrungen haben mir geholfen, mich an unterschiedliche Arbeitsumgebungen anzupassen und Probleme aus verschiedenen Perspektiven zu betrachten.</p>
+          <p>Ich bin diszipliniert, geduldig und lerne schnell. Jetzt möchte ich meine Leidenschaft für Technologie und Problemlösung nutzen, um Softwareentwickler zu werden.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Hobbys -->
-  <section id="hobbys" class="py-5 text-center bg-light text-dark">
-    <div class="container">
-      <h2 class="fw-bold mb-4 text-uppercase">Hobbys</h2>
-      <p class="lead">
-        Sport gehört zu meinem Alltag – ich gehe regelmäßig ins Fitnessstudio und achte auf gesunde Ernährung.
-        Ich liebe das Schwimmen, vor allem im Hallenbad. Am Fluss lese ich gerne oder genieße einfach die Ruhe.
-      </p>
-      <div class="d-flex justify-content-center mt-4 flex-wrap">
-        <img src="pictures/run.png" alt="Laufen" class="icon" />
-        <img src="pictures/swimm.png" alt="Schwimmen" class="icon" />
-        <img src="pictures/gym.png" alt="Fitness" class="icon" />
+    <!-- Java Projekte -->
+    <section id="projekte" class="section">
+      <h2 class="section-title">Meine Java Projekte</h2>
+      <div class="projects-container">
+        <!-- SBB Ticketmaschine -->
+        <div class="project-card">
+          <div class="project-icon">🚄</div>
+          <h3>SBB Ticketmaschine</h3>
+          <p>Eine Konsolenanwendung zur Simulation eines SBB-Ticketautomaten. Benutzer können Destinationen wählen, Tickettypen auswählen und Bezahlvorgänge durchführen.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">OOP</span>
+            <span class="tech-tag">Scanner</span>
+          </div>
+          <div class="project-features">
+            <h4>Features:</h4>
+            <ul>
+              <li>Destination-Auswahl</li>
+              <li>Ticket-Preisberechnung</li>
+              <li>Bezahlprozess</li>
+              <li>Ticket-Ausdruck</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Taschenrechner -->
+        <div class="project-card">
+          <div class="project-icon">🧮</div>
+          <h3>Java Taschenrechner</h3>
+          <p>Ein funktionaler Taschenrechner mit Grundrechenarten und erweiterten Funktionen. Implementiert mit sauberer Code-Struktur und Fehlerbehandlung.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Methoden</span>
+            <span class="tech-tag">Exception Handling</span>
+          </div>
+          <div class="project-features">
+            <h4>Features:</h4>
+            <ul>
+              <li>Grundrechenarten</li>
+              <li>Speicherfunktion</li>
+              <li>Fehlerbehandlung</li>
+              <li>Wiederholte Berechnungen</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Notizbuch -->
+        <div class="project-card">
+          <div class="project-icon">📓</div>
+          <h3>Notizbuch App</h3>
+          <p>Eine Konsolenanwendung zum Erstellen, Bearbeiten und Verwalten von Notizen. Mit Dateispeicherung und Suchfunktion.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">File I/O</span>
+            <span class="tech-tag">ArrayList</span>
+          </div>
+          <div class="project-features">
+            <h4>Features:</h4>
+            <ul>
+              <li>Notizen erstellen/löschen</li>
+              <li>Automatische Speicherung</li>
+              <li>Notizen durchsuchen</li>
+              <li>Kategorien verwalten</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+<!-- Restaurant Webseite -->
+<div class="project-card">
+  <div class="project-icon">🍽️</div>
+  <h3>Restaurant Webseite</h3>
+  <p>Eine responsive Restaurant-Webseite mit Menü und Kontaktseite. Entwickelt mit HTML, CSS und Bootstrap.</p>
+  <div class="tech-stack">
+    <span class="tech-tag">HTML</span>
+    <span class="tech-tag">CSS</span>
+    <span class="tech-tag">Bootstrap</span>
+    <span class="tech-tag">Responsive</span>
+  </div>
+  <div class="project-features">
+    <h4>Features:</h4>
+    <ul>
+      <li>Responsive Design</li>
+      <li>Interaktive Navigation</li>
+      <li>Menü-Kategorien</li>
+      <li>Kontaktformular</li>
+    </ul>
+  </div>
+  <div class="project-links">
+    <a href="weiteres_Projekt/mod3_index.html" class="project-link" target="_blank">
+      🌐 Webseite öffnen
+    </a>
+  </div>
+</div>
+    <!-- Fähigkeiten -->
+    <section id="faehigkeiten" class="section">
+      <h2 class="section-title">Fähigkeiten</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon">☕</div>
+          <h3>Java Entwicklung</h3>
+          <p>Objektorientierte Programmierung, Datenstrukturen, File I/O und Konsolenanwendungen.</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Webentwicklung</h3>
+          <p>HTML, CSS, JavaScript und Bootstrap für responsive Webseiten.</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">🚀</div>
+          <h3>Soft Skills</h3>
+          <p>Problemlösung, Teamarbeit, Anpassungsfähigkeit, Lernbereitschaft</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Zukunft -->
-  <section id="zukunft" class="py-5 text-center bg-dark text-light">
+    <!-- Hobbys -->
+    <section id="hobbys" class="section">
+      <h2 class="section-title">Hobbys</h2>
+      <div class="hobbies-container">
+        <div class="hobby-card">
+          <div class="hobby-icon">💪</div>
+          <h3>Fitness</h3>
+          <p>Ich gehe regelmäßig ins Fitnessstudio, um körperlich und mental fit zu bleiben.</p>
+        </div>
+        
+        <div class="hobby-card">
+          <div class="hobby-icon">🏊</div>
+          <h3>Schwimmen</h3>
+          <p>Schwimmen hilft mir, den Kopf frei zu bekommen und neue Energie zu tanken.</p>
+        </div>
+        
+        <div class="hobby-card">
+          <div class="hobby-icon">📚</div>
+          <h3>Lesen</h3>
+          <p>Ich lese gerne am Fluss und tauche in verschiedene Welten und Perspektiven ein.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zukunft -->
+    <section id="zukunft" class="section">
+      <h2 class="section-title">Zukunft</h2>
+      <div class="future-section">
+        <p>Ich möchte IT-Experte werden, eigene Projekte entwickeln und in einem motivierten Team arbeiten, das innovative Lösungen schafft.</p>
+        <div class="future-goals">
+          <div class="goal">
+            <h3>Kurzfristig</h3>
+            <p>Ein Praktikum als Applikationsentwickler in einem guten Unternehmen finden</p>
+          </div>
+          <div class="goal">
+            <h3>Mittelfristig</h3>
+            <p>Erste Berufserfahrung als Junior Developer sammeln</p>
+          </div>
+          <div class="goal">
+            <h3>Langfristig</h3>
+            <p>Full-Stack Entwickler werden und eigene Projekte umsetzen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontakt">
     <div class="container">
-      <h2 class="fw-bold mb-4 text-uppercase text-warning">Zukunft</h2>
-      <p class="lead">
-        Ich möchte ein Experte in der IT werden, eigene Projekte entwickeln und meine Sprachkenntnisse weiter ausbauen.
-        Mein Ziel ist es, in einem motivierenden Umfeld zu arbeiten, das Kreativität und Innovation fördert.
-      </p>
-      <img src="pictures/it.png" alt="IT Zukunft" class="icon mt-4" />
+      <div class="social-links">
+        <a href="contact.html" aria-label="Kontakt">📧 Kontakt</a>
+      </div>
+      <p>© 2025 Saleh – Zürich | Alle Rechte vorbehalten</p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-center text-light py-3">
-    <p class="mb-0 small">© 2025 Saleh – Portfolio</p>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
