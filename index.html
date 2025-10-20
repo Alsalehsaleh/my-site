@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">			
-<meta name="viewport" content="width=device-width, initial-scale=1.5">
-<title>Portfolio of Saleh</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <link rel="stylesheet" href="css/bootstrap-theme.css">
- <link rel="stylesheet" href="my.css">
- <link rel="stylesheet" href="css/bootstrap.css">
- <link rel="stylesheet" href="css/bootstrap.min.css">
- <link rel="stylesheet" href="css/bootstrap-theme.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio von Saleh</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Eigene CSS-Datei -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<img class="brand-img img-name" id="up" alt="Brand" src="pictures/me.png">
-<img class="logo img-name" src="pictures/saleh-logo.jpg">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Saleh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#ueber-mich">Über mich</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fertigkeiten">Fertigkeiten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbys">Hobbys</a></li>
+          <li class="nav-item"><a class="nav-link" href="#zukunft">Zukunft</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<span class="label label-default s1 move">
-	<a href="#Jetzt"><img class="imgs img-name" src="pictures/arrow.png">
-</a>Skills</span>
+  <!-- Header -->
+  <header class="text-center text-light py-5 mt-5">
+    <img src="pictures/me.png" alt="Saleh" class="rounded-circle mb-3 profilbild">
+    <h1 class="fw-bold">Willkommen auf meiner Portfolioseite</h1>
+    <p class="lead">Ich bin Saleh – leidenschaftlicher Lernender, zukünftiger Softwareentwickler und vielseitiger Mensch.</p>
+  </header>
 
-<span class="label label-primary s2 move"><a href="#Hobbys"><img class="imgs img-name" src="pictures/arrow.png"></a>Hobbies</span>
+  <!-- Über mich -->
+  <section id="ueber-mich" class="section-bg-dark text-light text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Wer bin ich?</h2>
+      <p class="lead">
+        Ich bin Saleh, 25 Jahre alt und lebe mit meiner Familie in Zürich.
+        Ich habe in verschiedenen Ländern gearbeitet und Erfahrungen in den Bereichen Bau, Buchhaltung, Elektrotechnik, Handel und Dekoration gesammelt.
+        Durch meine Berufserfahrung habe ich Disziplin, Geduld und eine schnelle Auffassungsgabe entwickelt.
+      </p>
+      <p class="lead">
+        Meine große Leidenschaft gilt der IT. Ich möchte als Softwareentwickler arbeiten und mich ständig weiterentwickeln.
+      </p>
+      <img src="pictures/wondering.png" alt="Nachdenklich" class="img-fluid mt-4" style="max-width: 300px;">
+    </div>
+  </section>
 
-<span class="label label-success s3 move"><a href="#Zukunft"><img class="imgs img-name" src="pictures/arrow.png"></a>Future</span>
+  <!-- Fertigkeiten -->
+  <section id="fertigkeiten" class="section-bg-light text-dark text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Was mache ich derzeit?</h2>
+      <p class="lead">
+        In den letzten Jahren habe ich intensiv an meinen sprachlichen und technischen Fähigkeiten gearbeitet.
+        Ich habe Deutschkurse besucht, meinen Sekundarschulabschluss nachgeholt und Online-Kurse im Bereich Webentwicklung absolviert.
+        Derzeit bilde ich mich auf <strong>Coursera</strong> im Bereich <em>Web Development</em> weiter und arbeite an eigenen Projekten.
+      </p>
+      <a href="weiteres_Projekt/mod3_index.html" class="btn btn-outline-dark mt-3">Weiteres Projekt ansehen</a>
+      <div class="mt-4">
+        <img src="pictures/learn.png" alt="Lernen" class="icon">
+        <img src="pictures/it-learn.png" alt="IT Lernen" class="icon">
+      </div>
+    </div>
+  </section>
 
-<span class="label label-info s4 move"><a href="contact.html"><img class="imgs img-name" src="pictures/arrow.png"></a> contact</span>
+  <!-- Hobbys -->
+  <section id="hobbys" class="section-bg-dark text-light text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Was sind meine Hobbys?</h2>
+      <p class="lead">
+        Sport ist mir sehr wichtig – ich gehe regelmäßig ins Fitnessstudio und achte auf gesunde Ernährung.
+        Außerdem liebe ich das Schwimmen seit meiner Kindheit. Am liebsten schwimme ich im Hallenbad, aber am Fluss spaziere ich gerne und lese dort ein Buch.
+      </p>
+      <div class="mt-4">
+        <img src="pictures/run.png" alt="Laufen" class="icon">
+        <img src="pictures/swimm.png" alt="Schwimmen" class="icon">
+        <img src="pictures/gym.png" alt="Fitness" class="icon">
+      </div>
+    </div>
+  </section>
 
-<div class="div2">
-<h2>Who am<span class="ich">I</span>?</h2>
-I am Saleh, I am 25 years old and live with my family in Zurich.
-I have already lived and worked in different countries and gained various experiences (construction, accounting, electrician, trade and decoration). 
+  <!-- Zukunft -->
+  <section id="zukunft" class="section-bg-light text-dark text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Was wünsche ich mir für die Zukunft?</h2>
+      <p class="lead">
+        In Zukunft möchte ich ein IT-Experte werden und eigene Projekte oder Anwendungen entwickeln.
+        Ich wünsche mir einen Beruf, der mir Freude bereitet, und ein Arbeitsumfeld, das inspirierend und angenehm ist.
+        Außerdem möchte ich mein Englisch weiter verbessern und neue Sprachen lernen.
+      </p>
+      <img src="pictures/it.png" alt="IT Zukunft" class="icon mt-3">
+    </div>
+  </section>
 
-Through my professional experience, I have acquired many useful qualities, including discipline, patience and a quick grasp.
+  <!-- Footer -->
+  <footer class="text-center text-light py-3 bg-dark">
+    <p class="mb-0">© 2025 Saleh – Portfolio</p>
+  </footer>
 
-I am very interested in the IT field, and therefore I want to have a job as a software developer.
-<br>
-<div class="img-container">
-<img class="img" src="pictures/wondering.png">
-</div>
-<br>
-<br>
-</div>
-
-<div class="div3" id="Jetzt">
-	<h2>What<span class="ich">i'm</span> doing?</h2>
-	In these five years I have experienced and done a lot, namely I attended a German course at the "Migro-klubschule" between 2018 and 2019.
-	In 2019, I have a preparation course at Trampoline Basic, and there I would be prepared for the apprenticeship. After that I applied everywhere, but unfortunately without result. 
-
-	Then I’d know I needed a secondary school degree to have better chance, so I went to an adult secondary school. 
-
-	I finished the course with very good grades, and immediately I sent my CV everywhere, but because of age and other reasons I coulden't find any thing. 
-
-	Since then, I have been working hard to improve my skills, for example, in English, 10 finger writing and IT. 
-
-	I follow an online course for web development on Coursera and i have even done some projects. <span class="label label-default s1 move">
-	<a href="weiteres_Projekt/mod3_index.html"><img class="imgs img-name" src="pictures/arrow.png">
-</a>Another project</span>
-<br>
-<img class="img-icon" src="pictures/learn.png">
-<img class="img-icon" src="pictures/it-learn.png">
-<br>
-<br>
-</div>
-
-
-<div class="div2" id="Hobbys">
-	<h2>What are<span class="ich">My</span> Hobbies?</h2>
-Sport is very important to me, so I visit the gym regularly and try to eat healthy. 
-	I have loved swimming since childhood, but I like to swim in the indoor pool and not in the lake or river. 
-
-	In the river I do not swim but like to walk there, and sometimes I sit on the river bank and read something.
-<br>
-<img class="img-icon" src="pictures/run.png">
-<img class="img-icon" src="pictures/swimm.png">
-<img class="img-icon" src="pictures/gym.png">
-<br>
-<br>
-</div>
-
-
-<div class="div3" id="Zukunft">
-	<h2>What do<span class="ich">I</span>want in the future?</h2>
-		In the future, I want to become an expert in IT and invent something myself. 
-		I should like my job very much and the workplace and atmosphere should be very comfortable. 
-
-		I want my English to always improve, and I would like to learn more languages.
-<br>
-<img class="img-icon" src="pictures/it.png">
-</div>
-<br>
-<br>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<span class="label label-default s1 move">
-	<a href="#Jetzt"><img class="imgs img-name" src="pictures/arrow.png">
-</a> Skills</span>
-
-<span class="label label-primary s2 move"><a href="#Hobbys"><img class="imgs img-name" src="pictures/arrow.png"></a> Hobbies</span>
-
-<span class="label label-success s3 move"><a href="#Zukunft"><img class="imgs img-name" src="pictures/arrow.png"></a>Future</span>
-
-<span class="label label-info s4 move"><a href="contact.html"><img class="imgs img-name" src="pictures/arrow.png"></a> contact</span>
-
 </html>
