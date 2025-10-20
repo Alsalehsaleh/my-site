@@ -1,66 +1,56 @@
-/* Allgemeines Styling */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #042940;
-  color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
-h2 {
-  color: #D6D58E;
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #005c53, #042940);
+  height: 100vh;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Sektionen */
-.section-bg-dark {
-  background-color: #005C53;
-}
-
-.section-bg-light {
-  background-color: #9FC131;
-}
-
-/* Profilbild */
 .profilbild {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #9FC131;
+  border: 4px solid #ffc107;
   transition: transform 0.3s ease;
 }
 
 .profilbild:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Icons */
 .icon {
-  width: 90px;
+  width: 80px;
   margin: 10px;
   transition: transform 0.3s ease;
 }
 
 .icon:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
-/* Navbar */
-.navbar-brand {
-  color: #DBF227 !important;
-}
-
+/* Navigation */
 .nav-link {
   color: #f2f2f2 !important;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #DBF227 !important;
+  color: #ffc107 !important;
+}
+
+/* Abschnitte */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* Footer */
 footer {
-  background-color: #042940;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
