@@ -1,91 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food, LLC</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Menü - FOOD, LLC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="ts">
-  <div id="google_translate_elemant">
-  </div>
- <!-- Navbar - Desktop and Tablet View -->
-  <nav class="navbar navbar-default hidden-xs">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#our menu">Food, LLC</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Navbar - Mobile View -->
-  <nav class="navbar navbar-default visible-xs">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+<body>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-utensils me-2"></i>FOOD, LLC
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Food, LLC</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#chicken">
+                <i class="fas fa-drumstick-bite me-1"></i>Chicken
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beef">
+                <i class="fas fa-hamburger me-1"></i>Beef
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sushi">
+                <i class="fas fa-fish me-1"></i>Sushi
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="link.html">
+                <i class="fas fa-envelope me-1"></i>Kontakt
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#chicken">Chicken</a></li>
-          <li><a href="#beef">Beef</a></li>
-          <li><a href="#sushi">Sushi</a></li>
-        </ul>
+    </nav>
+
+    <!-- Page Heading -->
+    <h1 class="page-title">
+      <i class="fas fa-book-open me-3"></i>Unser Menü
+    </h1>
+
+    <!-- Menu Items -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="menu-card">
+          <div class="menu-image">
+            <img src="chicken.jpg" alt="Chicken Gerichte" class="img-fluid">
+          </div>
+          <h3 class="menu-title" id="chicken">Chicken</h3>
+          <p>
+            Unsere Hühnchen-Gerichte werden aus frischen, regionalen Zutaten zubereitet. 
+            Von knusprig frittiert bis schonend gegrillt - für jeden Geschmack ist etwas dabei.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores esse, quam perspiciatis.
+          </p>
+          <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up me-1"></i>Zurück nach oben
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="menu-card">
+          <div class="menu-image">
+            <img src="beef.jpg" alt="Beef Gerichte" class="img-fluid">
+          </div>
+          <h3 class="menu-title" id="beef">Beef</h3>
+          <p>
+            Hochwertiges Rindfleisch von ausgewählten Lieferanten. Ob saftige Steaks, 
+            aromatische Burger oder traditionelle Eintöpfe - unsere Beef-Gerichte überzeugen.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up me-1"></i>Zurück nach oben
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+        <div class="menu-card">
+          <div class="menu-image">
+            <img src="sushi.jpg" alt="Sushi Auswahl" class="img-fluid">
+          </div>
+          <h3 class="menu-title" id="sushi">Sushi</h3>
+          <p>
+            Meisterhaft zubereitetes Sushi mit frischem Fisch und premium Zutaten. 
+            Von klassischen Maki bis zu kreativen Special Rolls - eine kulinarische Reise nach Japan.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up me-1"></i>Zurück nach oben
+          </a>
+        </div>
       </div>
     </div>
-  </nav>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <a href="link.html">
+        <i class="fas fa-comments me-2"></i>Kontaktieren Sie uns
+      </a>
+    </div>
+  </div>
 
-  <!-- Page Heading -->
-  <div class="container text-center">
-    <h1 id="our menu">Our Menu</h1>
-  </div> 
-
- 
-
-<div class="row div1 col-md-4 col-sm-6 col-xs-12 p1">    
-  <p>
-    <h3 class="h3 text-center" id="chicken">Chicken</h3>
-    Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Fuga necessitatibus tempore quaerat ullam consequuntur pariatur eligendi. Quam sequi temporibus aut nesciunt architecto doloribus, iusto perferendis ipsum sed quasi, dolore 
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores esse, quam perspiciatis, nobis veritatis sapiente facilis doloremque quis blanditiis, similique vitae placeat culpa accusamus molestiae voluptatem, amet reiciendis veniam sequi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, eaque? 
-    <a href="#our menu"> Back to Top</a>
-  </p>
-</div>
-<div class="row div1 col-md-4 col-sm-6 col-xs-12 p2">
-  <p>
-    <h3 class="h3 text-center" id="beef">Beef</h3>
-   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis est praesentium aperiam, laborum mollitia provident dolorem tenetur nisi doloremque deleniti? Atque blanditiis est tempora eaque dolore necessitatibus incidunt eligendi porro?
-   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reprehenderit voluptatem sed beatae iure in, rerum aut aspernatur ex consequuntur praesentium officiis quibusdam at dignissimos, accusantium veniam, est molestias? Lorem, a tenetur inventore itaque!
-    <a href="#our menu"> Back to Top</a>
-  </p>
-</div>
-<div class="row div1 col-md-4 col-sm-12 col-xs-12 p3">
-  <p>
-   <h3 class="h3 text-center sushi" id="sushi">Sushi</h3>
-   Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Quam quis quisquam ea, corrupti quia soluta. Vero, incidunt magnam unde exercitationem ipsa, asperiores quod. Id a numquam sapiente quam sint, ipsam!
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-   cillum dolore eu fugiat nulla pariatur. Excepteur s
-    <a href="#our menu"> Back to Top</a>
-  </p>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<div>
-  <a href="link.html"><p class="footer">Connect us</p></a>
-</div>
-
 </html>
